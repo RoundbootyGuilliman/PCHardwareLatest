@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        version="2.0">
+
+    <tlib-version>1.2</tlib-version>
+    <short-name>ct</short-name>
+    <uri>customTags</uri>
+
+    <tag>
+        <name>simpleProduct</name>
+        <tag-class>epam.javalab22.pchardware.tag.SimpleProductTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>product</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>complexProduct</name>
+        <tag-class>epam.javalab22.pchardware.tag.ComplexProductTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>product</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>currency</name>
+        <tag-class>epam.javalab22.pchardware.tag.CurrencyTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>figure</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>price</name>
+        <tag-class>epam.javalab22.pchardware.tag.PriceAndCartTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>product</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+</taglib>
